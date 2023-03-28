@@ -1,0 +1,542 @@
+//main styles
+.main-wrapper
+	padding 0 0 0 0
+	min-width $min-width
+	width 100%
+	position relative
+	overflow hidden
+	min-height 100%
+	display flex
+	flex-direction column
+	justify-content space-between
+
+.wrapper
+	min-width $min-width
+	max-width $max-width
+	padding 0 30px 0 30px
+	margin 0 auto
+	position relative
+
+/* titles */
+p
+	font($base-font-size, $base-line-height, $text-color, $custom-font-family, 400)
+
+h1
+	font($font-size-h1, $line-height-h1, $title-color, $custom-font-family, 700)
+
+h2
+	font($font-size-h2, $line-height-h2, $title-color, $custom-font-family, 700)
+
+h3
+	font($font-size-h3, $line-height-h3, $title-color, $custom-font-family, 700)
+
+/* styles */
+.main
+	min-width $min-width
+	width 100%
+
+
+.button
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 14px;
+	color: $black
+	display block
+	padding: 18px 0
+	background: #fff
+	border-radius: 15px
+	text-align center
+	&:hover
+		background: #000
+		color: #fff
+
+
+.hero
+	.wrapper
+		padding: 0
+		max-width: 1440px
+	&__wrapper
+		display flex
+		justify-content: center
+	&__left
+		width: 43%
+		padding-left 100px
+		padding-top 221px
+		padding-bottom 183px
+		position relative
+		&-bg
+			background-image: url('../img/main/bg-hero.jpg')
+			background-repeat: no-repeat
+			background-size: cover
+			position absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			&-outer
+				position absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				overflow: hidden
+
+		
+	&__right
+		background-image: url('../img/main/bg-hero-2.jpg')
+		background-repeat: no-repeat
+		background-size: cover
+		position relative
+		width: 57%
+	&__abs-1
+		position absolute
+		top: 14%
+		left: 18%
+		max-width: 338px
+		z-index 1
+		&-desc
+			position absolute
+			top: 17%
+			right: -30%
+			padding: 23px 32px 15px 25px
+			background: rgba(255, 255, 255, 0.4);
+			box-shadow: 26px 68px 71px rgba(7, 0, 145, 0.163953);
+			backdrop-filter: blur(40.7742px);
+			border-radius: 30px;
+			width: 217px
+			height: 94px
+			opacity 0
+			p
+				font-weight: 700;
+				font-size: 13px;
+				line-height: 18px;
+				letter-spacing: -0.5px;
+				color: #030402;
+				max-width: 160px
+			div
+				margin-top auto
+				font-weight: 400;
+				font-size: 10px;
+				line-height: 10px;
+				color: #030402;
+				position absolute
+				bottom: 15px
+				left: 25px
+	&__abs-2
+		position absolute
+		top: 39%
+		left: 46%
+		max-width: 339px
+		z-index 2
+		&-desc
+			position absolute
+			top: 47%
+			left: -74%
+			padding: 23px 24px 20px 25px
+			background: rgba(255, 255, 255, 0.43);
+			box-shadow: 54px 44px 71px rgba(53, 0, 145, 0.14057);
+			backdrop-filter: blur(40.7742px);
+			border-radius: 30px;
+			width: 326px
+			height: 117px
+			opacity 0
+			p
+				font-weight: 700;
+				font-size: 13px;
+				line-height: 18px;
+				letter-spacing: -0.5px;
+				color: #030402;
+				max-width: 277px
+			div
+				position absolute
+				bottom: 20px
+				left: 25px
+				font-weight: 400;
+				font-size: 10px;
+				line-height: 10px;
+				color: #030402;
+
+	&__title
+		position relative
+		z-index 2
+		h1
+			font-weight: 700;
+			font-size: 144px;
+			line-height: 144px;
+			letter-spacing: -5px;
+			max-width: 412px
+			margin-bottom 10px
+		span
+			font-weight 700
+			font-size: 34px;
+			line-height: 44px;
+			letter-spacing: -1px;
+			max-width: 409px
+			display inline-block
+	&__desc
+		margin-top 40px
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 22px;
+		letter-spacing: -0.5px;
+		color: #030402;
+		max-width: 337px
+		margin-bottom 20px
+		position relative
+		z-index 2
+	&__button
+		width: 156px
+		position relative
+		z-index 2
+
+
+
+.slider
+	background: F9FAFC
+	.wrapper
+		max-width: 1440px
+		padding: 0
+
+.swiper
+	max-width: 1440px;
+	max-height: 800px;
+	overflow: hidden
+	&-slide
+		max-width: 1440px
+
+
+.swiper-container-vertical>.swiper-pagination-bullets
+	right: 60px
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet
+	margin: 24px 0
+.swiper-wrapper
+	transform-style: flat
+.swiper-pagination-bullet
+	width: 6px;
+	height: 6px;
+	border: 1px solid #030402;
+	background: #fff
+.swiper-pagination-bullet-active
+	background: #030402
+.swiper-container-horizontal>.swiper-pagination-bullets
+	bottom: 30px
+
+
+
+
+.how
+	background: #F9FAFC;
+	padding: 160px 0 180px
+	&__title
+		margin-bottom 80px
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 68px;
+		text-align: center;
+		letter-spacing: -1.5px;
+		color: #030402;
+	&__wrapper
+		display flex
+		justify-content: center
+		gap: 40px
+		flex-wrap: wrap
+		max-width: 1280px
+	&__item
+		display flex
+		flex-direction: column
+		align-items: center
+		justify-content: flex-start
+		path
+			stroke-dasharray: 1000
+			stroke-dashoffset: 0
+		&-pic
+			width: 120px
+			display flex
+			justify-content: center
+			height: 120px
+			align-items: center
+			margin-bottom 40px
+			border-radius: 30px
+			background: #fff
+		&-title
+			font-weight: 700;
+			font-size: 34px;
+			line-height: 34px;
+			text-align: center;
+			letter-spacing: -1px;
+			color: #030402;
+			margin-bottom 20px
+		&-desc
+			font-weight: 700;
+			font-size: 18px;
+			line-height: 24px;
+			text-align: center;
+			letter-spacing: -0.5px;
+			color: #030402;
+			mix-blend-mode: normal;
+			opacity: 0.5;
+			max-width: 290px
+			margin: auto
+
+
+.video
+	padding: 160px 0 0 0
+	position relative
+	&__bg
+		background: url('../img/main/bg-join.jpg')
+		background-repeat: no-repeat
+		background-position: top
+		background-size: 1440px 690px
+		position absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		&-outer
+			width: 1440px
+			height: 690px
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			position absolute
+			z-index -1
+			overflow: hidden
+	&__abs-outer
+		position absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index 1
+		overflow: hidden
+		border-radius: 30px
+	&__abs
+		max-width: 1040px
+		transform: scale(1.5)
+	&__wrapper
+		max-width: 1040px
+		margin: auto
+	&__title
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 68px;
+		text-align: center;
+		letter-spacing: -1.5px;
+		color: #030402;
+		max-width: 800px
+		margin: 0 auto 60px
+	&__subtitle
+		width: 100%
+		display flex
+		justify-content: center
+		position absolute
+		top: 70%
+		left: 50%
+		transform: translateX(-50%)
+		font-size 90px
+		line-height 93px
+		text-align left
+		color: #fff
+		letter-spacing: -3px
+		text-transform uppercase
+	&__wrapper-block
+		max-width: 1120px
+		margin: auto
+		padding: 120px 15px 0
+		position relative
+	&__block
+		background-size: cover
+		background-repeat: no-repeat
+		text-align: center;
+		overflow: hidden;
+		max-width: 1040px;
+		padding-top: 66.75%;
+		position relative
+		margin: auto
+		&.activeVideo 
+			background: none
+			.video__startBlock
+				opacity 1
+				pointer-events: none
+			.video__iframe
+				opacity 1
+				pointer-events: all
+	&__startBlock
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2
+		&-btn
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 18.75%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			cursor: pointer;
+			-webkit-transition: all 0.3s ease-in;
+			transition: all 0.3s ease-in;
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			align-items: center;
+			transition: $default-transition
+			text-transform uppercase
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 16px;
+			letter-spacing: 2px;
+			color: $title-color
+			gap: 15px
+			&:hover
+				opacity .8
+	&__iframe
+		position: absolute;
+		top: 0%;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		opacity 0
+		pointer-events: none
+
+.book
+	padding: 290px 0
+	&__right
+		width: 46.6%
+		position relative
+		perspective: 900px
+	&__wrapper
+		display flex
+		max-width: 1040px
+		margin: auto
+	&__title
+		font-weight: 700;
+		font-size: 60px;
+		line-height: 68px;
+		letter-spacing: -1.5px;
+		color: #030402;
+		margin-bottom 20px
+		max-width: 353px
+	&__desc
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 22px;
+		letter-spacing: -0.5px;
+		color: #030402;
+		max-width: 277px
+	&__pic
+		max-width: 266px
+		position absolute
+		filter: drop-shadow(75px 79px 84px rgba(53, 26, 122, 0.15));
+		top: -100%
+		right: -20%
+		transform: rotateY(-35deg)
+		perspective: 900px
+	&__abs-1
+		position absolute
+		top: 31%
+		left: -37%
+		max-width: 122px
+		box-shadow: 28px 35px 25px rgba(215, 151, 75, 0.310861);
+		border-radius: 38.75px;
+		transform: rotateX(30deg)
+	&__abs-2
+		position absolute
+		top: 14%
+		right: -20%
+		max-width: 85px
+		box-shadow: 28px 35px 25px rgba(75, 159, 215, 0.310861);
+		border-radius: 24.6591px;
+		transform: rotateX(30deg)
+	&__abs-3
+		position absolute
+		top: 37%
+		right: -45%
+		max-width: 86px
+		box-shadow: 28px 35px 25px rgba(29, 153, 49, 0.310861);
+		border-radius: 24.6591px;
+		transform: rotateX(30deg)
+.join
+	padding: 100px 0
+
+	position relative
+	&__bg-outer
+		position absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		z-index -1
+		width: 1440px
+		overflow: hidden
+		height: 100%
+	&__bg
+		width: 100%
+		height: 100%
+		margin: auto
+
+	.wrapper
+		position relative
+	&__button
+		width: 156px
+		margin: auto
+	&__desc
+		font-weight: 700;
+		font-size: 22px;
+		line-height: 32px;
+		text-align: center;
+		letter-spacing: -0.5px;
+		color: #030402;
+		mix-blend-mode: normal;
+		opacity: 0.8;
+		max-width: 826px
+		margin 0 auto 40px
+	&__title
+		font-family: 'Soleil';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 70px;
+		line-height: 70px;
+		text-align: center;
+		letter-spacing: -1.75px;
+		color: #030402;
+		max-width: 844px
+		margin: 0 auto 40px
+	&__abs
+		position absolute
+		&:nth-of-type(1)
+			top: 50%
+			left: 23%
+			width: 85px
+			height: 85px
+		&:nth-of-type(2)
+			top: 33%
+			left: 74%
+			width: 50px
+			height: 50px
+		&:nth-of-type(3)
+			top: 77%
+			left: 75%
+			width: 98px
+			height: 98px
+		&-inner
+			border-radius: 100px
+			width 100%
+			height: 100%
+			background: rgba(246, 227, 228, 0.17);
+			backdrop-filter: blur(10px);
+			position relative
+
+
+.hidden
+	display none

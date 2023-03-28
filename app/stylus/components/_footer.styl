@@ -1,0 +1,76 @@
+.footer
+	width 100%
+	min-width $min-width
+	padding: 82px 0 60px
+	background: #000
+	&__list
+		display flex
+		justify-content: center
+		align-items: center
+		gap: 40px
+		&-item
+			height: 20px
+			overflow: hidden
+			cursor: pointer
+			a
+				font-weight: 400;
+				font-size: 12px;
+				line-height: 14px;
+				color: #FFFFFF;
+				position relative
+				bottom: 0
+				transition: 0s
+			&:hover
+				a
+					bottom: 18px
+					transition: .4s
+
+
+					
+	&__wrapper
+		display flex
+		justify-content: space-between
+		align-items: center
+	&__logo
+		max-width: 60px
+		margin-right auto
+		transition: $default-transition
+		position relative
+		a
+			display flex
+			justify-content: center
+			align-items: center
+		&-abs
+			position absolute
+			width: 4.5px
+			height: 4.5px
+			display block
+			background #fff
+			right: -4.5px
+			bottom: 0
+	&__social
+		display flex
+		justify-content: center
+		gap: 20px
+		align-items: center
+		margin-left auto
+		overflow: hidden
+		&-item
+			height 24px
+			cursor pointer
+			a
+				position relative
+				top: -42px
+				transition: 0s
+			&:hover
+				a
+					top: 0
+					transition: .4s
+
+	&__copyright
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		color: rgba(255, 255, 255, .5);
+		margin-top 40px
+		display inline-block

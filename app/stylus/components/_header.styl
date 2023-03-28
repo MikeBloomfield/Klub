@@ -1,0 +1,91 @@
+.header
+	width 100%
+	min-width $min-width
+	padding: 60px 0
+	position absolute
+	top: 0
+	z-index: 100
+	&__logo
+		max-width: 60px
+		margin-right auto
+		transition: $default-transition
+		position relative
+		a
+			display flex
+			justify-content: center
+			align-items: center
+		&-abs
+			position absolute
+			width: 4.5px
+			height: 4.5px
+			display block
+			background #000
+			right: -4.5px
+			bottom: 0
+	&__wrapper
+		display flex
+		justify-content: center
+		align-items: center
+	&__seeker
+		padding: 5px 0
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		color: #03040266;
+		mix-blend-mode: normal;
+		position relative
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-image: linear-gradient(
+			to left,
+			#03040266,
+			#03040266 50%,
+			#000 50%);
+		background-size: 200% 100%;
+		background-position: 100%;
+		transition: all 0.2s ease-in-out;
+		&:hover
+			background-position: 0%;
+			background-image: linear-gradient(
+			to left,
+			#03040266 50%,
+			#000 50%,
+			#000
+			);
+	&__waitlist
+		display flex
+		align-items: center
+		margin-left 60px
+		padding: 5px 0
+		&-desc
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 14px;
+			color: #030402;
+			opacity: 0.7;
+			margin-left 10px
+		&-plus
+			transition: $default-transition
+			span
+				display block
+				width 10px
+				height: 2px
+				background:$black
+				border-radius: 2px
+				position relative
+				top: -1px
+				&:before
+					content: ""
+					position absolute
+					width: 10px
+					height: 2px
+					background: $black
+					border-radius: 2px
+					top: 0
+					left: 0
+					transform: rotate(90deg)
+		&:hover
+			.header__waitlist-plus
+				transform: scale(1.3)
+
+
